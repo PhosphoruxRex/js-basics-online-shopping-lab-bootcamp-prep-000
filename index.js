@@ -49,7 +49,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (!cart.length) {    
+  if (!cart.length) {
   } else {
       for (var i = 0; i < cart.length; i++) {
         if (cart[i].itemName == item) {
