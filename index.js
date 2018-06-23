@@ -51,10 +51,10 @@ function total() {
 function removeFromCart(item) {
   if (!cart.length) {
   } else {
-      for (var i = 0; i < cart.length; i++) {
-        if (cart[i].itemName == item) {
-          cart = cart.splice(i, 1)
-          return cart
+    for (var i = 0; i < cart.length; i++) {
+      if (cart[0].itemName == item) {
+        cart = cart.splice(i, 1)
+        return cart
       }
     }
   }
