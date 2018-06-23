@@ -39,9 +39,9 @@ function total() {
   } else {
 
     for (var i = 0; i < cart.length; i++) {
+      console.log(total)
       total += parseInt(cart[i][itemPrice])
     }
-    console.log(total)
     return total
   }
 }
