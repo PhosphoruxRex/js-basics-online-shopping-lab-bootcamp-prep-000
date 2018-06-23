@@ -1,5 +1,5 @@
 var cart = [];
-console.log()
+console.log('\n')
 console.log('\n')
 
 function getCart() {
