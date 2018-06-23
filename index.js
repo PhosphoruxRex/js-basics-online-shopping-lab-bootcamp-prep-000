@@ -29,7 +29,7 @@ function viewCart() {
           lines.push(`and ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}.`)
         }
       }
-    return `In your cart, you have ${lines.join(', ')}`
+      return `In your cart, you have ${lines.join(', ')}`
   }
 
 }
