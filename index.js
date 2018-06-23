@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var temp = {itemName: item, itemPrice: Math.floor((Math.random() * 100) + 1)}
   cart.push(temp)
-  return `${temp["itemName"]} has been added to your cart.`
+  return `${temp.itemName} has been added to your cart.`
 }
 
 function viewCart() {
@@ -22,9 +22,9 @@ function viewCart() {
       lines = []
       for (var i = 0; i < cart.length; i++) {
         if (i < cart.length-1) {
-          lines.push(`${cart[i][itemName]} at ${cart[i][itemPrice]}`)
+          lines.push(`${cart[i]["itemName"]} at ${cart[i][itemPrice]}`)
         } else {
-          lines.push(`and ${cart[i][itemName]} at ${cart[i][itemPrice]}.`)
+          lines.push(`and ${cart[i]["itemName"]} at ${cart[i][itemPrice]}.`)
         }
       }
     return `In your cart, you have ${lines.join(', ')}`
