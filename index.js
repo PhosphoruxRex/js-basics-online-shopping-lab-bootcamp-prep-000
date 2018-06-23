@@ -22,9 +22,9 @@ function viewCart() {
       lines = []
       for (var i = 0; i < cart.length; i++) {
         if (i < cart.length-1) {
-          lines.push(`${cart[i]["itemName"]} at ${cart[i][itemPrice]}`)
+          lines.push(`${cart[i]["itemName"]} at ${cart[i]["itemPrice"]}`)
         } else {
-          lines.push(`and ${cart[i]["itemName"]} at ${cart[i][itemPrice]}.`)
+          lines.push(`and ${cart[i]["itemName"]} at ${cart[i]["itemPrice"]}.`)
         }
       }
     return `In your cart, you have ${lines.join(', ')}`
