@@ -40,7 +40,7 @@ function total() {
 
     for (var i = 0; i < cart.length; i++) {
       console.log(cart[i])
-      total += parseInt(cart[i][itemPrice])
+      total += parseInt(cart[i].itemPrice)
     }
     return total
   }
