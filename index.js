@@ -1,6 +1,6 @@
 var cart = [];
-console.log('\n')
-console.log('\n')
+console.log('aaaaaaaaaaaaaaaaa')
+console.log('aaaaaaaaaaaaaaaaa')
 
 function getCart() {
  return cart;
