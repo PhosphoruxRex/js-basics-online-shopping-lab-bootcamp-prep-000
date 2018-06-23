@@ -1,5 +1,5 @@
 var cart = [];
-
+console.log(cart)
 function getCart() {
  return cart;
 }
