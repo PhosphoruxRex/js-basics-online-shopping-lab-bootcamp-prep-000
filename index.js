@@ -21,7 +21,7 @@ function viewCart() {
   } else if (cart.length == 1) {
     return `In your cart, you have ${cart[0]["itemName"]} at $${cart[0]["itemPrice"]}.`
   } else {
-      lines = []
+      var lines = []
       for (var i = 0; i < cart.length; i++) {
         if (i < cart.length-1) {
           lines.push(`${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
